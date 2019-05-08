@@ -1,9 +1,12 @@
 import React from 'react';
+import Nav from "./components/Nav";
+import Search from "./pages/Search";
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <Nav/>
+      <Search />
     </div>
   );
 }
