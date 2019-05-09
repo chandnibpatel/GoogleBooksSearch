@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Banner from "../components/Banner";
 import { Input, FormBtn } from "../components/Form";
-
+import API from "../utils/API";
 class Search extends Component {
   state = {
     books: []
@@ -11,17 +11,17 @@ class Search extends Component {
   //   this.loadBooks();
   // }
 
-  // loadBooks = () => {
-  //   API.getBooks()
-  //     .then(res => this.setState({ books: res.data }))
-  //     .catch(err => console.log(err));
-  // };
+  loadBooks = () => {
+    API.getBooks()
+      .then( console.log("loadbook called"),
+        res => this.setState({ books: res.data }))
+      .catch(err => console.log(err));
+  };
 
-  handleSubmitClick=event=>{
+  handleSubmitClick= event =>{
     event.preventDefault();
     console.log("Searching")
-    
-
+    this.loadBooks();
   }
 
   render() {
