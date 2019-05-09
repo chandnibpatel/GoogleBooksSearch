@@ -17,6 +17,13 @@ class Search extends Component {
   //     .catch(err => console.log(err));
   // };
 
+  handleSubmitClick=event=>{
+    event.preventDefault();
+    console.log("Searching")
+    
+
+  }
+
   render() {
     return (
       <div>
@@ -24,7 +31,7 @@ class Search extends Component {
           <div className="text-center">
             <form className="form-inline">
                 <Input name="title" placeholder="Enter a Book" />
-                <FormBtn>Submit Book</FormBtn>
+                <FormBtn onClick={this.handleSubmitClick} > Submit Book</FormBtn>
             </form>
           </div>
       </div>
