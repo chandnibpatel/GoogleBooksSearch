@@ -7,16 +7,19 @@ export function Book({
     description,
     image,
     link, 
-    title
+    title,
+    subtitle,
+    Button
     }) {
     return (
       <li className="list-group-item">
         <Container>
           <Row>
               <Col size="xs-12 sm-12">
-              <h2>{title}</h2>
-              
-              <h3>{authors}</h3>
+              <h3 className="heading-title">{title}</h3>
+            {subtitle && <h5 className="heading-subtitle">{subtitle}</h5>}
+            <p className="heading-subtitle">by {authors} (Author)</p>
+           
               </Col>
             <Col size="xs-4 sm-2">
               <Thumbnail src={image} />
@@ -33,3 +36,5 @@ export function Book({
       </li>
     );
   } 
+
+  export default Book;
