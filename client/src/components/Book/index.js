@@ -30,6 +30,22 @@ export function Book({
               {/* <a rel="noreferrer noopener" target="_blank" href={href}>
                 Go to recipe!
               </a> */}
+              <div className="d-flex flex-row bd-highlight mb-3">
+              <div className="p-2 bd-highlight">
+                <a
+                  href={link}
+                  className="btn view-button heading-subtitle ml-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View
+                </a>
+              </div>
+              <div className="p-2 bd-highlight">
+                <Button />
+              </div>
+            </div>
+        
             </Col>
           </Row>
         </Container>

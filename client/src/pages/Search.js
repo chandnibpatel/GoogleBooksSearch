@@ -18,8 +18,7 @@ class Search extends Component {
     console.log(this.state.q);
     API.getBooks(this.state.q)
       .then( 
-      
-        res => this.setState({ books: res.data }))
+       res => this.setState({ books: res.data }))
       .catch(err => console.log(err));
   };
 
