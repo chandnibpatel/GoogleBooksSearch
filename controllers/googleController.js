@@ -30,8 +30,7 @@ module.exports = {
       //     )
       //   )
       // )
-      .then(books => res.json(books),
-      console.log(res))
+      .then(books => res.json(books))
       .catch(err => res.status(422).json(err));
   }
 };
