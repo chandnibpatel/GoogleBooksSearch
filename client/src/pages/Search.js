@@ -47,7 +47,7 @@ class Search extends Component {
       authors: book.volumeInfo.authors,
       description: book.volumeInfo.description,
       image: book.volumeInfo.imageLinks.thumbnail
-    }).then(() => this.loadBooks());
+    }).then(() => console.log("saved"));// this.loadBooks()
   };
 
   render() {

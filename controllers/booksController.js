@@ -14,7 +14,7 @@ module.exports = {
   },
   create: function(req, res) {
       console.log("Created load");
-      
+
     db.Book.create(req.body)
       .then(dbBook => res.json(dbBook))
       .catch(err => res.status(422).json(err));

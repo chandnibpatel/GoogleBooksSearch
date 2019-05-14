@@ -11,7 +11,7 @@ function Nav() {
         Search
       </a>
       <br/>
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="/saved">
         Saved
       </a>
     </nav>

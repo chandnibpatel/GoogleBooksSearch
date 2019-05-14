@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Banner from "../components/Banner";
-import { Input, FormBtn } from "../components/Form";
+// import Banner from "../components/Banner";
+// import { Input, FormBtn } from "../components/Form";
 import API from "../utils/API";
 import Book from "../components/Book";
 
@@ -28,8 +28,8 @@ class Saved extends Component {
       try {
         await API.deleteBook(id).then(res => this.getSavedBooks());
       } catch (ex) {
-        if (ex.response && ex.response.status === 404)
-          toast.error("This book has been deleted.");
+    //    if (ex.response && ex.response.status === 404)
+      //    toast.error("This book has been deleted.");
         this.setState({ books: originalBooks });
       }
     };
@@ -62,7 +62,7 @@ class Saved extends Component {
           <div className="row">
             <div className="col-8 col-centered card-content">
               {this.state.books.length ? (
-                <List>
+               <ul className="list-group">
                   {this.state.books.map(book => (
                     <Book
                       key={book._id}
@@ -82,7 +82,7 @@ class Saved extends Component {
                       )}
                     />
                   ))}
-                </List>
+                </ul>
               ) : (
                 <div className="mockup-content">
                   <h2 className="brand-title text-center">
