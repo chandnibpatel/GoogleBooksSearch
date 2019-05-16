@@ -15,29 +15,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-
-
 // Add routes, both API and view
 app.use(routes);
-// Database configuration with mongoose
-//"mongodb://articalAdmin:Test123@ds149146.mlab.com:49146/heroku_5wbvcdnk/NewsScraper"
-//var dbConnect = process.env.MONGODBURL ||"mongodb://localhost:27017/test123";
-// mongoose.connect(dbConnect,{
-//   useCreateIndex: true,
-//   useNewUrlParser: true
-// });
-// //mongoose.connect("mongodb://localhost/mongoscraper");
-// var db = mongoose.connection;
-
-// // Show any mongoose errors
-// db.on("error", function(error) {
-//   console.log("Mongoose Error: ", error);
-// });
-
-// // Once logged in to the db through mongoose, log a success message
-// db.once("open", function() {
-//   console.log("Mongoose connection successful.");
-// });
 
 // // Connect to the Mongo DB
 mongoose.connect(
