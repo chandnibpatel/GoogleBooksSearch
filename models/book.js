@@ -11,7 +11,7 @@ const bookSchema = new Schema({
     image: { type: String, required: false },
     googleId: { type: String, required: true }
   });
-   console.log("BOOK-Model");
+  
   const Book = mongoose.model("Book", bookSchema);
   
   module.exports = Book;
