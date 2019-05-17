@@ -1,6 +1,6 @@
 {
   "name": "googlebookssearch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Google Books Search using MERN",
   "main": "server.js",
   "scripts": {
