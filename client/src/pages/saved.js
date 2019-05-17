@@ -37,13 +37,13 @@ class Saved extends Component {
       <div className="container">
  
             <div className="text-center">
-                <h1>
-                  React Google Books Search
-                </h1>
+                <h3>
+                   REACT GOOGLE BOOKS SEARCH
+                </h3>
 
-                <h1>
-                  Showing {count} books in the database.
-                </h1>
+                <h3>
+                  SHOWING {count} BOOKS IN THE DATABASE.
+                </h3>
             </div>
 
             {this.state.books.length ? (
