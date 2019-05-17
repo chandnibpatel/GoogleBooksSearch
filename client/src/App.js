@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from "./components/Nav";
 import Search from "./pages/Search";
-import Saved from "./pages/Saved";
+import Saved from "./pages/saved";
 import { Route, Redirect, Switch, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
